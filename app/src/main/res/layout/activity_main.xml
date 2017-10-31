@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#090722"
+    tools:context="com.leon_robot.mqtclient.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/actionbar"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/wifiimg"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="2.5dp"
+            android:layout_alignParentLeft="true"
+            android:background="@mipmap/wifi" />
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@mipmap/add1"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="LeonIOT"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
