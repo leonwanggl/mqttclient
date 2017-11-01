@@ -26,7 +26,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class EsptouchDemoActivity extends Activity implements OnClickListener {
-
 	private static final String TAG = "EsptouchDemoActivity";
 
 	private TextView mTvApSsid;
