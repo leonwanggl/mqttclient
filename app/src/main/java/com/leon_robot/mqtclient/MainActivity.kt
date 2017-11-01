@@ -26,8 +26,8 @@ class MainActivity : AppCompatActivity() {
             if(wifiManager.isWifiEnabled)
             {
                 val wifiinfo: WifiInfo=wifiManager.connectionInfo
-                wifiinfo.hiddenSSID.toString()
-                wifiname= wifiinfo.ssid.toString().trimEnd('"').trimStart('"')
+                wifiinfo.hiddenSSID
+                wifiname= wifiinfo.ssid
 
             }
             var dialog: Dialog = Dialog(this@MainActivity,android.R.style.Theme_Holo_Dialog_NoActionBar)
@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
             wificonfirm.setOnClickListener {
                 val password: EditText=dialog.findViewById(R.id.password)
                 Log.v("SSID",wifiname)
-                Log.v("password",password.text.toString().trim())
+                Log.v("password",password.text.toString())
                 var switchStatus: Int = 0
                 val switch: Switch=dialog.findViewById(R.id.ssidhide)
                 if(switch.isChecked)
@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 Log.v("switchStatus",switchStatus.toString())
                 val resultcount: EditText=dialog.findViewById(R.id.resultcount)
-                Log.v("resultcount",resultcount.text.toString().trim())
+                Log.v("resultcount",resultcount.text.toString())
             }
         }
     }
